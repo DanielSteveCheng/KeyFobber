@@ -19,7 +19,10 @@ def csvParser():
         users = []
         
         for row in csv_reader:
+            if row[1] == '':
+                row[1] = 'A'
             users.append(row) # Each row is a list of strings
+            print(row)
 
         users = sortRooms(users)
         return users
