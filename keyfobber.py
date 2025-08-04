@@ -1,9 +1,28 @@
 import pyautogui
 from pynput import mouse
 import sys
+import csv
 
 instructions = []
 rooms = {}
+
+csvFile = "TestFile.csv"
+
+
+def csvParser():
+    with open(csvFile, 'r', newline='') as csvfile:
+        # Create a csv.reader object
+        csv_reader = csv.reader(csvfile)
+
+        header = next(csv_reader)
+        
+        users = []
+        
+        for row in csv_reader:
+            users.append(row) # Each row is a list of strings
+
+        users = sortRooms(users)
+        return users
 
 def on_click(x, y, button, pressed):
 
@@ -150,8 +169,19 @@ if __name__ == "__main__":
                     Quitting...
               """)
         closeFile(file)
+
+    try:
+        file = open(csvFile, 'r', encoding='utf-8')
+        print("""
+                    CSV file found!""")
+    except:
+        print("""
+                    File not found! Please ensure that CSV is in the same directory as this script.
+                    Quitting...
+              """)
+        closeFile(file)
     
-    entries = getFileContents(file)
+    entries = csvParser()
     pointer = 0
     
     while True:

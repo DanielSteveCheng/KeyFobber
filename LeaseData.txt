@@ -8,9 +8,9 @@ Letter: B
 Lastname: Levin
 Firstname: Michael
 
-Room: 3000
-Letter: B
+Room: 1724
+Letter: A
 Lastname: Chen
-Firstname: Alex
+Firstname: BBBB
 
 END
