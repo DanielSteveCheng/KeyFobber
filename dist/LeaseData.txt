@@ -1,0 +1,21 @@
+Room: 1029
+Letter: A
+Lastname: Pineapple
+Firstname: Joe
+
+Room: 1119
+Letter: A
+Lastname: Cheng
+Firstname: Daniel
+
+Room: 1119
+Letter: B
+Lastname: Levin
+Firstname: Michael
+
+Room: 3000
+Letter: A
+Lastname: Chen
+Firstname: Steven
+
+END

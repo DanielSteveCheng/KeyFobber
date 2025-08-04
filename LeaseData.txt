@@ -1,0 +1,16 @@
+Room: 1119
+Letter: A
+Lastname: Cheng
+Firstname: Daniel
+
+Room: 1119
+Letter: B
+Lastname: Levin
+Firstname: Michael
+
+Room: 3000
+Letter: B
+Lastname: Chen
+Firstname: Alex
+
+END
